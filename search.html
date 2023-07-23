@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content="Pelican" />
     <meta name="description" content="Personal Blog Blog Posts">
-    <title> Personal Blog </title>
+    <title>Search | Personal Blog</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
     <link rel="stylesheet" type="text/css" href="https://www.ibrahim-elsayed.com/theme/css/main.css" />
@@ -52,33 +52,26 @@
             <li class="mr-4 pt-6"><a  href="https://www.ibrahim-elsayed.com/pages/cves.html">CVEs</a></li>
             <li class="mr-4 pt-6"><a  href="https://www.ibrahim-elsayed.com/pages/presentations-and-blog-posts.html">Presentations and Blog posts</a></li>
             <!-- <li class="mr-4 pt-6"><a  href="https://www.ibrahim-elsayed.com/tags.html">Tags</a></li> -->
-            <li class="mr-4 pt-6"><a  href="https://www.ibrahim-elsayed.com/search.html">Search</a></li>
+            <li class="mr-4 pt-6"><a  class="border-b-2 border-zinc-800 dark:border-zinc-300"
+ href="https://www.ibrahim-elsayed.com/search.html">Search</a></li>
         </ul>
     </nav>
     <div class="flex-grow md:max-w-screen-md md:mx-auto md:w-3/4 px-4">
 
-<div class="my-12 md:my-24 text-zinc-800 dark:text-zinc-300">
-  <h1 class="mb-6 text-3xl font-bold">Ibrahim's Personal site</h1>
-  <p class="mb-8 text-zinc-600 dark:text-zinc-400"> Hey, hey! You've stumbled upon my personal site. 
-It's a chill place where I keep a record of my work shenanigans and occasionally drop some helpful content.
-Nothing too serious! Have a look around and stay as long as you like :)
-</p>
-  <ul class="flex px-2 space-x-4 text-lg">
-    <li><a href="https://twitter.com/the_st0rm/" target="_blank" rel="noopener noreferrer" title="Twitter"
-        aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a></li>
-    <li><a href="https://www.linkedin.com/in/thestorm/" target="_blank" rel="noopener noreferrer" title="Linkedin"
-        aria-label="Linkedin"><i class="fab fa-linkedin fa-lg"></i></a></li>
-    <li><a href="https://www.ibrahim-elsayed.com/
-feeds/all.atom.xml"
-        type="application/atom+xml" title="feeds/all.atom.xml" rel="alternate"><i class="fa fa-rss fa-lg"
-          aria-hidden="true"></i></a>
-    </li>
-  </ul>
-</div>
-
-<div class="py-1">
-  <ul>
-  </ul>
+<div class="relative mb-12 md:mt-14 text-zinc-800 dark:text-zinc-300">
+    <h1 class="flex font-bold my-10 text-4xl mb-12 md:my-12 text-zinc-800 dark:text-zinc-300">Search&nbsp;
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+            stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+    </h1>
+    <div class="stork-wrapper">
+        <input
+            class="font-semibold h-10 w-full border-2 border-zinc-500  bg-zinc-100 dark:bg-zinc-800 placeholder-zinc-400 dark:placeholder-zinc-300 focus:border-zinc-500 focus:outline-none rounded-lg pl-4"
+            data-stork="sitesearch" autofocus="" placeholder=" Search ↵" aria-label="search" type="search">
+        <div data-stork="sitesearch-output" class=""></div>
+    </div>
 </div>
 
     </div>
@@ -122,6 +115,10 @@ feeds/all.atom.xml"
                 }
             }
         });
+    </script>
+    <script src="https://files.stork-search.net/releases/v1.5.0/stork.js"></script>
+    <script>
+        stork.register("sitesearch", "https://www.ibrahim-elsayed.com/search-index.st")
     </script>
 </body>
 
